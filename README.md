@@ -1,8 +1,4 @@
-# ERC721 Wallet [![Build Status](https://travis-ci.com/TimDaub/ERC721-wallet.svg?branch=master)](https://travis-ci.com/TimDaub/ERC721-wallet) [![Codecov branch](https://img.shields.io/codecov/c/github/TimDaub/ERC721-wallet/master.svg)](https://codecov.io/github/TimDaub/ERC721-wallet?branch=master)
-
-## Demo
-
-Check out the demo here: https://www.mycollectibles.io/
+# ERC721 Wallet
 
 ## Motivation
 
