@@ -21,7 +21,7 @@
     ]
   },
   "author": "Tim Daubenschütz",
-  "license": "apache2",
+  "license": "not yet decided",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.7",
     "@fortawesome/free-solid-svg-icons": "^5.4.2",
