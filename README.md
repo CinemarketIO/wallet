@@ -20,9 +20,3 @@ Or by pulling the image from docker hub directly:
 ```
 $ docker run -p 80:80 timdaub/erc721-wallet
 ```
-
-## Contribute & License
-
-This is an open source project licensed under the permissive Apache 2 license.
-Any contributions will be merged as quickly as possible. We highly welcome
-outside contributions. Please send your PR!
