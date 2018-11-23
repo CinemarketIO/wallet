@@ -1,9 +1,9 @@
-# ERC721 Wallet
+# Cinemarket ERC721 Wallet
 
 ## Installation
 
 ```
-$ git clone git@github.com:TimDaub/ERC721-wallet.git
+$ git clone git@github.com:CinemarketIO/wallet.git
 $ npm i
 $ npm run dev
 ```
@@ -18,5 +18,5 @@ $ docker run -d -p 80:80 app
 Or by pulling the image from docker hub directly:
 
 ```
-$ docker run -p 80:80 timdaub/erc721-wallet
+$ <coming soon>
 ```
