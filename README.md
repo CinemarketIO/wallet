@@ -1,4 +1,4 @@
-# ERC721 Wallet
+# Cinemarket ERC721 Wallet
 
 ## Installation
 
