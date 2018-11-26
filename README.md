@@ -18,5 +18,5 @@ $ docker run -d -p 80:80 app
 Or by pulling the image from docker hub directly:
 
 ```
-$ <coming soon>
+$ docker run -p 80:80 cinemarket/wallet
 ```
