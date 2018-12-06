@@ -1,5 +1,7 @@
 // @format
 import { put, takeEvery, call, all } from "redux-saga/effects";
+import moment from "moment";
+
 import {
   fetchTransactionsSuccess,
   fetchTransactionsFailure
@@ -44,7 +46,7 @@ function* fetchTransactions(web3, address, contractAddress) {
     }
   }
 
-  const returnValues = inputs.map(event => event.returnValues);
+  let returnValues = inputs.map(event => event.returnValues);
   const tokenURIPromises = returnValues.map(({ _tokenId }) =>
     contract.methods.tokenURI(_tokenId).call()
   );
@@ -83,6 +85,11 @@ function* fetchTransactions(web3, address, contractAddress) {
     returnValues[i].tokenHash = tokenURIHashes[i];
   }
 
+  returnValues = returnValues.filter(
+    value =>
+      value.token && moment(value.token.validTo["@value"]).isAfter(moment())
+  );
+
   return returnValues;
 }
 
@@ -96,8 +103,10 @@ export function* fetchTransactionsBatch(action) {
       )
     );
   } catch (err) {
+    console.log(err);
     yield put(fetchTransactionsFailure(err));
   }
+
   const transactions = {};
   for (let [i, contract] of contracts.entries()) {
     transactions[contract] = results[i];
