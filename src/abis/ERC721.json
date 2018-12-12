@@ -341,25 +341,6 @@
       "type": "function"
     },
     {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "name": "rights",
-      "outputs": [
-        {
-          "name": "",
-          "type": "string"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
       "inputs": [
         {
           "name": "_name",
@@ -444,11 +425,11 @@
       "constant": false,
       "inputs": [
         {
-          "name": "_to",
-          "type": "address"
+          "name": "_tos",
+          "type": "string"
         },
         {
-          "name": "_tokenURI",
+          "name": "_tokenURIs",
           "type": "string"
         }
       ],

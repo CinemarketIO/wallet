@@ -56,9 +56,11 @@ function* transferToken({
 
   var erc721Contract = new web3.eth.Contract(ERC721, contract);
   let tx;
+  const addresses = [to];
+  const URIs = [`https://${config.ipfsGateway}/ipfs/${newTokenHash}`];
   try {
     tx = yield erc721Contract.methods
-      .mint(to, `https://${config.ipfsGateway}/ipfs/${newTokenHash}`)
+      .mint(addresses.join(","), URIs.join(","))
       .send({
         from: from
       });
