@@ -45,7 +45,7 @@ function* transferToken({
 
   const newToken = Object.assign(token, {
     license: licenseHash,
-    source: tokenHash
+    rightsOf: tokenHash
   });
   const res = yield call(
     ipfs.files.add,
