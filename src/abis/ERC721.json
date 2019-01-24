@@ -243,6 +243,20 @@
     {
       "constant": true,
       "inputs": [],
+      "name": "ipfsProvider",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
       "name": "symbol",
       "outputs": [
         {
@@ -426,11 +440,11 @@
       "inputs": [
         {
           "name": "_tos",
-          "type": "string"
+          "type": "address[]"
         },
         {
-          "name": "_tokenURIs",
-          "type": "string"
+          "name": "_ipfsHashes",
+          "type": "bytes"
         }
       ],
       "name": "mint",

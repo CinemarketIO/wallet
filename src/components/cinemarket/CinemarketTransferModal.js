@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import styled from "styled-components";
+import { toast } from "react-toastify";
 
 import { transferTokenBegin } from "../../actions/transferToken";
 import StyledInput from "../StyledInput";
